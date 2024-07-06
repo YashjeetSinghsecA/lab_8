@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Information</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Country Information</h1>
+
+      <!-- Input form for country name -->
+      <form id="country-form">
+        <label for="country-input">Enter Country Name:</label>
+        <input type="text" id="country-input" name="country" required />
+        <button type="submit">Fetch Country Info</button>
+      </form>
+
+      <div class="country-info">
+        <h2 id="country-name"></h2>
+        <p><strong>Capital:</strong> <span id="capital"></span></p>
+        <p><strong>Population:</strong> <span id="population"></span></p>
+        <p><strong>Region:</strong> <span id="region"></span></p>
+        <p>
+          <strong>Flag:</strong> <img id="flag" src="" alt="Country Flag" />
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
